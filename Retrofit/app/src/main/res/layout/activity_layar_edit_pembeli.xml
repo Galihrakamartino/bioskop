@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layardetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context=".LayarDetail">
+    <TextView
+        android:id="@+id/tvIdPembelicntn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id Pembeli : "
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvIdTiketcntn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvnamacntn"
+        android:layout_alignParentStart="true"
+        android:text="Id Tiket : "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvnamacntn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edtIdTiket"
+        android:text="Nama : "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvalamatcntn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="112dp"
+        android:text="Alamat : "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvtelpcntn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edttelp"
+        android:layout_alignParentStart="true"
+        android:text="Telp : "
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtIdPembeli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/edtIdTiket"
+        android:hint="id pembeli"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edtIdTiket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvIdPembelicntn"
+        android:layout_centerHorizontal="true"
+        android:hint="id Tiket"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edtnama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvnamacntn"
+        android:layout_alignLeft="@+id/edtIdPembeli"
+        android:hint="nama " />
+
+    <EditText
+        android:id="@+id/edtalamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvalamatcntn"
+        android:layout_alignLeft="@+id/edtIdPembeli"
+        android:hint="alamat " />
+
+    <EditText
+        android:id="@+id/edttelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/edtIdPembeli"
+        android:layout_marginTop="149dp"
+        android:hint="Telp"
+        android:inputType="number" />
+    <LinearLayout
+        android:id="@+id/Linearlayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/edttelp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/btInsert2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insert" />
+
+        <Button
+            android:id="@+id/btUpdate2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update" />
+
+        <Button
+            android:id="@+id/btDelete2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete" />
+
+        <Button
+            android:id="@+id/btBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvMessage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pesan Muncul disini"
+        android:layout_below="@+id/Linearlayout2"
+        android:textSize="20sp"
+        android:inputType="textMultiLine"/>
+</RelativeLayout>

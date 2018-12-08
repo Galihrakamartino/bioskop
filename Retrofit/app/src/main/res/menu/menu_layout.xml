@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menuTambahTransPembelian"
+        android:title="Tambah Trans Pembelian"/>
+    <item android:id="@+id/layarutama"
+        android:title="List Pembeli"/>
+    <item android:id="@+id/menuListStudio"
+        android:title="List Studio"/>
+    <item android:id="@+id/menuInsertStudio"
+        android:title="Insert Data Studio"/>
+
+
+
+</menu>
